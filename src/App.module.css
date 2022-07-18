@@ -1,0 +1,14 @@
+.App {
+  width: 90%;
+  margin: 0 auto;
+}
+.wrapper {
+  width: 20rem;
+  transition: all ease-in-out 0.3s;
+}
+
+@media (min-width: 48rem) {
+  .wrapper {
+    width: 25rem;
+  }
+}

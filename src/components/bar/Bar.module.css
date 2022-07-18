@@ -1,0 +1,50 @@
+.wrapper {
+  /* height: `${(value / maxValue) * 20}rem`, */
+  width: 20%;
+  /* max-width: 3rem; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper:hover {
+  cursor: pointer;
+}
+.track {
+  height: 10rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.bar {
+  /* height: "10%", */
+  /* height: `${(barValue / maxValue) * 100}%`, */
+  width: 100%;
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 0.3rem;
+  transition: all ease-in-out 0.2s;
+}
+.bar:hover {
+  opacity: 0.5;
+}
+.day {
+  color: hsl(28, 10%, 53%);
+}
+.tooltip {
+  width: 100%;
+  background-color: hsl(25, 47%, 15%);
+  padding: 0.3rem 0.2rem;
+  color: white;
+  border-radius: 0.3rem;
+  font-size: 0.6rem;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (min-width: 48rem) {
+  .tooltip {
+    font-size: 0.8rem;
+  }
+}
